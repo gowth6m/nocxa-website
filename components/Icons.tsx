@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NocxaLogo({ className, secondaryColor }: any) {
+export function NocxaLogo({ className, secondaryColor }: any) {
   return (
     <svg
       className={className}

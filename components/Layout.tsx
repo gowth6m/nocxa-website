@@ -59,7 +59,7 @@ export default function Layout({ title, children }: LayoutProps) {
           <div>
             {/* <Toaster /> */}
           </div>
-          <div className="h-12 md:h-24"></div>
+          {/* <div className="h-12 md:h-24"></div> */}
           {children}
         </main>
 

@@ -122,13 +122,13 @@ a {
 }
 
 .pri-button {
-  @apply px-6 py-2 rounded-lg text-white font-bold bg-[var(--purple)];
+  @apply px-4 py-1.5 rounded-lg text-white font-bold bg-[var(--purple)];
   transition: background-position 0.5s ease-in-out;
   border: 2px solid var(--purple);
 }
 
 .sec-button {
-  @apply px-6 py-2 rounded-lg text-white font-bold hover:bg-[var(--purple)];
+  @apply px-4 py-1.5 rounded-lg text-white font-bold hover:bg-[var(--purple)];
   transition: background-position 0.5s ease-in-out;
   border: 2px solid var(--purple);
 }
