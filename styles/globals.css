@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 :root {
+  --purple: #8C52FF;
+  --grey: #1f2029;
+
+  --white: #1d1d1d;
+  --mainWhite: #EFE9F4;
+  --mainBlack: #070707;
+  --mainSubBlack: #8f8f8f;
+  --mainGrey: #1f2029;
+}
+
+:root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -108,4 +119,16 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.pri-button {
+  @apply px-6 py-2 rounded-lg text-white font-bold bg-[var(--purple)];
+  transition: background-position 0.5s ease-in-out;
+  border: 2px solid var(--purple);
+}
+
+.sec-button {
+  @apply px-6 py-2 rounded-lg text-white font-bold hover:bg-[var(--purple)];
+  transition: background-position 0.5s ease-in-out;
+  border: 2px solid var(--purple);
 }
