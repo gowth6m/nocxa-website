@@ -68,7 +68,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex-1 flex md:order-1 flex-col justify-center items-center gap-4">
-            <div className="h-12">
+            <div className="h-10">
               <NocxaLogo secondaryColor="var(--purple)" />
             </div>
             <div className="footer-brand-text">

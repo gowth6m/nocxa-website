@@ -1,4 +1,11 @@
 import useWindowDimensions from "@/utils/window";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -85,6 +92,7 @@ export default function NavBar() {
               </Link>
             </div>
           </div>
+
           {/* MOBILE MENU */}
           {menuOpened && (
             <motion.div
@@ -98,12 +106,42 @@ export default function NavBar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-white font-semibold text-lg m-4 hover:text-[var(--purple)]"
+                      className="text-white font-semibold text-lg my-2 hover:text-[var(--purple)] p-4"
                     >
                       {item.name}
                     </Link>
                   );
                 })}
+              </div>
+              <div className="flex flex-row flex-1 md:order-3 gap-8 justify-center items-center">
+                <Link
+                  href="https://github.com/nocxa"
+                  target="_blank"
+                  className="h-8 w-8 hover:text-[var(--purple)]"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/nocxa"
+                  target="_blank"
+                  className="h-8 w-8 hover:text-[var(--purple)]"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link
+                  href="https://twitter.com/nocxaofficial"
+                  target="_blank"
+                  className="h-8 w-8 hover:text-[var(--purple)]"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/nocxa_official/"
+                  target="_blank"
+                  className="h-8 w-8 hover:text-[var(--purple)]"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </Link>
               </div>
             </motion.div>
           )}
