@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const pathPrefix = process.env.NODE_ENV === 'production'
-  ? 'https://gowth6m.github.io/nocxa-website/'
+  ? 'https://gowth6mxxx.github.io/nocxa-website/'
   : '';
 
 const nextConfig = {
