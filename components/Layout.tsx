@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 type LayoutProps = {
@@ -10,11 +11,7 @@ export default function Layout({ title, children }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>
-          {title
-            ? title + " - Nocxa"
-            : "Nocxa"}
-        </title>
+        <title>{title ? title + " - Nocxa" : "Nocxa"}</title>
         <meta
           name="description"
           content="Nocxa is a student-run tech company providing web development, app development, and machine learning services to clients. Our team of talented developers offers creative and efficient solutions to meet clients' needs. Our goal is to help bring clients' visions to life through cutting-edge technology."
@@ -23,29 +20,20 @@ export default function Layout({ title, children }: LayoutProps) {
           name="keywords"
           content="Nocxa, Software Development, Exeter, London, United Kingdom, Web Development, App Development, Flutter"
         ></meta>
-        <meta
-          property="og:title"
-          content="Nocxa"
-        ></meta>
+        <meta property="og:title" content="Nocxa"></meta>
         <meta
           property="og:description"
           content="Nocxa is a student-run tech company providing web development, app development, and machine learning services to clients. Our team of talented developers offers creative and efficient solutions to meet clients' needs. Our goal is to help bring clients' visions to life through cutting-edge technology."
         ></meta>
-        <meta
-          property="og:url"
-          content="https://nocxa.com/"
-        ></meta>
+        <meta property="og:url" content="https://nocxa.com/"></meta>
         <meta property="og:site_name" content="Nocxa"></meta>
         <meta name="author" content="Nocxa LTD - https://nocxa.com"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
         <meta name="robots" content="index, follow"></meta>
-        <meta
-          name="apple-mobile-web-app-title"
-          content="Nocxa"
-        ></meta>
-        <link rel="apple-touch-icon" href="/logo/logo.png"></link>
-        <link rel="icon" href="/logo/logo_circle.svg" />
+        <meta name="apple-mobile-web-app-title" content="Nocxa"></meta>
+        <link rel="apple-touch-icon" href="/logo/nocxa.png"></link>
+        <link rel="icon" href="/logo/nocxa.svg" />
       </Head>
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)]">
@@ -56,16 +44,14 @@ export default function Layout({ title, children }: LayoutProps) {
 
         {/* BODY */}
         <main className="container m-auto mt-4 px-4">
-          <div>
-            {/* <Toaster /> */}
-          </div>
+          <div>{/* <Toaster /> */}</div>
           {/* <div className="h-12 md:h-24"></div> */}
           {children}
         </main>
 
         {/* FOOTER */}
-        <footer className="flex h-auto justify-center items-center bg-[var(--purple)] text-white">
-          {/* <Footer /> */}
+        <footer className="flex h-auto justify-center items-center bg-[var(--black)] text-white">
+          <Footer />
         </footer>
       </div>
     </>
