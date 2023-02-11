@@ -146,7 +146,14 @@
 
     .intro-moon-animate {
         animation: moon-animate 6s infinite ease-in-out;
+        /* cursor: pointer; */
     }
+
+    /* .intro-moon-animate:hover,
+    .intro-moon-animate:focus {
+      animation: moon-animate 6s infinite ease-in-out;
+      cursor: pointer;
+  } */
 
     @keyframes
     moon-animate {

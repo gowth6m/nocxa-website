@@ -480,7 +480,7 @@ export function Illustration1({ className, fill }: any) {
         cy="512.4364"
         r="9"
         fill="#3f3d56"
-        className="intro-eye-animation"
+        // className="intro-eye-animation"
       />
       <path
         d="M782.04,521.28011c6.37889-28.56758-14.01185-57.43392-45.544-64.47477s-62.2651,10.41-68.644,38.9776,14.51861,39.10379,46.05075,46.14464S775.66116,549.84769,782.04,521.28011Z"
