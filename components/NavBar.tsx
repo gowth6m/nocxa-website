@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { NocxaLogo, IconMenu } from "./Icons";
+import { NocxaLogo, IconMenu } from "./misc/Icons";
 
 export default function NavBar() {
   const { width } = useWindowDimensions() ?? { width: 0 };
@@ -25,16 +25,15 @@ export default function NavBar() {
   ];
 
   const handleScroll = () => {
-    if (window.scrollY > 56) {
+    if (window.scrollY > 64) {
       const currentScrollPos = window.scrollY;
 
-      if (currentScrollPos > prevScrollPos && width! > 768) {
+      if (currentScrollPos > prevScrollPos) {
         setVisible(false);
-      } else {
-        setVisible(true);
       }
-
       setPrevScrollPos(currentScrollPos);
+    } else {
+      setVisible(true);
     }
   };
 
@@ -45,106 +44,114 @@ export default function NavBar() {
 
   return (
     <>
-      {visible && (
-        <div className="container mx-auto h-14 md:h-16 flex">
-          {/* MOBILE */}
-          <div className="flex justify-between items-center w-full">
-            {/* LOGO */}
-            <div className="h-8 m-2 md:flex-1 flex justify-start md:w-full">
-              <NocxaLogo
-                secondaryColor="var(--purple)"
-                className="md:mr-auto md:w-auto"
-              />
-            </div>
+      {true && (
+        <div
+          className={
+            visible
+              ? "fixed top-0 w-full flex justify-center items-center h-14"
+              : "fixed top-0 w-full flex justify-center items-center h-14 bg-[var(--black)]"
+          }
+        >
+          <div className="container fixed mx-auto h-16 flex">
+            {/* MOBILE */}
+            <div className="flex justify-between items-center w-full">
+              {/* LOGO */}
+              <div className="h-8 m-2 md:flex-1 flex justify-start md:w-full">
+                <NocxaLogo
+                  secondaryColor="var(--purple)"
+                  className="md:mr-auto md:w-auto"
+                />
+              </div>
 
-            <div
-              className="m-2 cursor-pointer md:hidden z-50"
-              onClick={() => {
-                setMenuOpened(!menuOpened);
-              }}
-            >
-              <IconMenu
-                className=""
-                fill="white"
-                secondaryColor="var(--purple)"
-                open={menuOpened ? true : false}
-              />
-            </div>
+              <div
+                className="m-2 cursor-pointer md:hidden z-50"
+                onClick={() => {
+                  setMenuOpened(!menuOpened);
+                }}
+              >
+                <IconMenu
+                  className=""
+                  fill="white"
+                  secondaryColor="var(--purple)"
+                  open={menuOpened ? true : false}
+                />
+              </div>
 
-            {/* MENU */}
-            <div className="hidden md:flex flex-row">
-              {navLinks.map((item: any) => {
-                return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={cssNavLinks}
-                  >
-                    {item.name}
-                  </Link>
-                );
-              })}
-            </div>
-
-            <div className="hidden md:flex md:flex-1">
-              <Link className="ml-auto sec-button" href="/contact">
-                Get in touch
-              </Link>
-            </div>
-          </div>
-
-          {/* MOBILE MENU */}
-          {menuOpened && (
-            <motion.div
-              className="bg-black w-full h-full fixed origin-top flex flex-col text-center z-40 items-center"
-              variants={variants_0}
-              animate={menuOpened ? "transform" : "stop"}
-            >
-              <div className="flex flex-col text-center z-40 items-center mt-14">
+              {/* MENU */}
+              <div className="hidden md:flex flex-row">
                 {navLinks.map((item: any) => {
                   return (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-white font-semibold text-lg my-2 hover:text-[var(--purple)] p-4"
+                      className={cssNavLinks}
                     >
                       {item.name}
                     </Link>
                   );
                 })}
               </div>
-              <div className="flex flex-row flex-1 md:order-3 gap-8 justify-center items-center">
-                <Link
-                  href="https://github.com/nocxa"
-                  target="_blank"
-                  className="h-8 w-8 hover:text-[var(--purple)]"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/company/nocxa"
-                  target="_blank"
-                  className="h-8 w-8 hover:text-[var(--purple)]"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link
-                  href="https://twitter.com/nocxaofficial"
-                  target="_blank"
-                  className="h-8 w-8 hover:text-[var(--purple)]"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </Link>
-                <Link
-                  href="https://www.instagram.com/nocxa_official/"
-                  target="_blank"
-                  className="h-8 w-8 hover:text-[var(--purple)]"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
+
+              <div className="hidden md:flex md:flex-1">
+                <Link className="ml-auto sec-button" href="/contact">
+                  Get in touch
                 </Link>
               </div>
-            </motion.div>
-          )}
+            </div>
+
+            {/* MOBILE MENU */}
+            {menuOpened && (
+              <motion.div
+                className="bg-black w-full h-full fixed origin-top flex flex-col text-center z-40 items-center"
+                variants={variants_0}
+                animate={menuOpened ? "transform" : "stop"}
+              >
+                <div className="flex flex-col text-center z-40 items-center mt-14">
+                  {navLinks.map((item: any) => {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="text-white font-semibold text-lg my-2 hover:text-[var(--purple)] p-4"
+                      >
+                        {item.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+                <div className="flex flex-row flex-1 md:order-3 gap-8 justify-center items-center">
+                  <Link
+                    href="https://github.com/nocxa"
+                    target="_blank"
+                    className={socialLinks}
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/company/nocxa"
+                    target="_blank"
+                    className={socialLinks}
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                  <Link
+                    href="https://twitter.com/nocxaofficial"
+                    target="_blank"
+                    className={socialLinks}
+                  >
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/nocxa_official/"
+                    target="_blank"
+                    className={socialLinks}
+                  >
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </Link>
+                </div>
+              </motion.div>
+            )}
+          </div>
         </div>
       )}
     </>
@@ -152,8 +159,9 @@ export default function NavBar() {
 }
 
 // CSS for the NavBar.tsx component
-const cssNavLinks =
-  "text-white font-semibold text-lg m-4 hover:text-[var(--purple)]";
+const cssNavLinks = "text-white font-semibold m-4 hover:text-[var(--purple)]";
+
+const socialLinks = "h-8 w-8 md:h-12 md:w-12 hover:text-[var(--purple)]";
 
 const variants_0 = {
   transform: {

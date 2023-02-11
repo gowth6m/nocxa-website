@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import React from "react";
-import { NocxaLogo } from "./Icons";
+import { NocxaLogo } from "./misc/Icons";
 
 export default function Footer() {
   return (

@@ -1,4 +1,27 @@
 @tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black) var(--grey);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--grey);
+  border-radius: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 2px;
+  border: 1px solid var(--black);
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -6,7 +29,7 @@
   --purple: #8C52FF;
   --grey: #1f2029;
   --black: #070707;
-  
+
   --mainWhite: #EFE9F4;
   --mainBlack: #070707;
   --mainSubBlack: #8f8f8f;
@@ -131,4 +154,8 @@ a {
   @apply px-4 py-1.5 rounded-lg text-white font-bold hover:bg-[var(--purple)];
   transition: background-position 0.5s ease-in-out;
   border: 2px solid var(--purple);
+}
+
+.no-header-height {
+  height: calc(100vh - 3.5rem);
 }

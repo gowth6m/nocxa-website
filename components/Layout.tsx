@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "./Footer";
+import Background from "./misc/Background";
 import NavBar from "./NavBar";
 
 type LayoutProps = {
@@ -38,14 +39,15 @@ export default function Layout({ title, children }: LayoutProps) {
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)]">
         {/* NAV BAR */}
-        <header className="w-full">
+        <header className="w-full z-20">
           <NavBar />
         </header>
 
         {/* BODY */}
-        <main className="container m-auto mt-4 px-4">
+        {/* <Background /> */}
+        <main className="container m-auto px-4 md:px-0 z-10">
           <div>{/* <Toaster /> */}</div>
-          {/* <div className="h-12 md:h-24"></div> */}
+          <div className="h-16"></div>
           {children}
         </main>
 
