@@ -1,5 +1,7 @@
 @tailwind base;
 
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -26,11 +28,15 @@
 @tailwind utilities;
 
 :root {
-  --purple: #8C52FF;
-  --grey: #1f2029;
+  /* --purple: #8C52FF; */
+  /* --grey: #1f2029; */
+  --orange: #ff906f;
+  --purple: #a166ed;
+  --pink: #FF6584;
+  --blue: #5777ff;
+  --grey: #16181c;
   --black: #070707;
-
-  --mainWhite: #EFE9F4;
+  --white: #EFE9F4;
   --mainBlack: #070707;
   --mainSubBlack: #8f8f8f;
   --mainGrey: #1f2029;
@@ -145,17 +151,45 @@ a {
 }
 
 .pri-button {
-  @apply px-4 py-1.5 rounded-lg text-white font-bold bg-[var(--purple)];
+  @apply px-4 py-1.5 rounded-full text-white font-bold bg-[var(--purple)] cursor-pointer text-center;
   transition: background-position 0.5s ease-in-out;
   border: 2px solid var(--purple);
 }
 
 .sec-button {
-  @apply px-4 py-1.5 rounded-lg text-white font-bold hover:bg-[var(--purple)];
+  @apply px-4 py-2 rounded-full text-white font-bold hover:bg-[var(--purple)] cursor-pointer text-center;
   transition: background-position 0.5s ease-in-out;
   border: 2px solid var(--purple);
+}
+
+.sec-button-orange {
+  @apply px-4 py-3 rounded-full text-white font-bold hover:bg-[var(--purple)] bg-[var(--orange)] cursor-pointer text-center;
+  transition: background-position 0.5s ease-in-out;
+  /* border: 2px solid var(--orange); */
 }
 
 .no-header-height {
   height: calc(100vh - 3.5rem);
 }
+
+.border-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--white);
+  font-weight: 900;
+}
+
+.font-museo {
+  font-family: 'MuseoModerno', cursive;
+}
+
+.grad-bg-text {
+  background: linear-gradient(90deg,#a166ed,#5777ff);
+  font-weight: 900;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+

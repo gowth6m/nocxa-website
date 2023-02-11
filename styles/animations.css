@@ -1,0 +1,162 @@
+.intro-eye-animation {
+    animation: eye-animation 1200ms infinite ease-in-out;
+  }
+  
+  @keyframes
+    eye-animation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translate(10px, 2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .intro-hand-animation {
+    animation: hand-animation 2400ms infinite ease-in-out;
+  }
+  
+  @keyframes
+    hand-animation {
+    0% {
+      transform: translate(-362.60752px, 878.31743px) rotate(-66.82884deg);
+    }
+    20% {
+      transform: translate(-366.60752px, 880.31743px) rotate(-67.82884deg);
+    }
+    80% {
+      transform: translate(-366.60752px, 880.31743px) rotate(-67.82884deg);
+    }
+    100% {
+      transform: translate(-362.60752px, 878.31743px) rotate(-66.82884deg);
+    }
+  }
+  
+  .intro-flower-animation-line {
+    animation: flower-animation-line 2400ms infinite ease-in-out;
+  }
+  
+  @keyframes
+    flower-animation-line {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-10px, -10px);
+    }
+    80% {
+      transform: translate(-10px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .intro-flower-animation-leaf {
+    animation: flower-animation-leaf 2400ms infinite ease-in-out;
+  }
+  
+  @keyframes
+    flower-animation-leaf {
+    0% {
+      transform: translate(-226.66547px, -50.81143px);
+    }
+    20% {
+      transform: translate(-236.66547px, -60.81143px);
+    }
+    80% {
+      transform: translate(-236.66547px, -60.81143px);
+    }
+    100% {
+      transform: translate(-226.66547px, -50.81143px);
+    }
+  }
+
+  /* Animation for non essential plants */
+    .intro-plant-animation-one {
+        animation: plant-animation-one 2400ms infinite ease-in-out;
+    }
+
+    @keyframes
+    plant-animation-one {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(2px, 6px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .intro-plant-animation-two {
+        animation: plant-animation-two 2s infinite ease-in-out;
+    }
+
+    @keyframes
+    plant-animation-two {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(-0px, -5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .intro-plant-animation-three {
+        animation: plant-animation-three 2.5s infinite ease-in-out;
+    }
+
+    @keyframes
+    plant-animation-three {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(2px, 10px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .intro-plant-animation-four {
+        animation: plant-animation-four 2.5s infinite ease-in-out;
+    }
+
+    @keyframes
+    plant-animation-four {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(5px, 2px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .intro-moon-animate {
+        animation: moon-animate 6s infinite ease-in-out;
+    }
+
+    @keyframes
+    moon-animate {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0px, 10px) skewX(-3deg);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }

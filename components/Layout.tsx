@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "./Footer";
-import Background from "./misc/Background";
 import NavBar from "./NavBar";
 
 type LayoutProps = {
@@ -33,19 +32,21 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
         <meta name="robots" content="index, follow"></meta>
         <meta name="apple-mobile-web-app-title" content="Nocxa"></meta>
-        <link rel="apple-touch-icon" href="/nocxa-website/logo/nocxa.png"></link>
+        <link
+          rel="apple-touch-icon"
+          href="/nocxa-website/logo/nocxa.png"
+        ></link>
         <link rel="icon" href="/nocxa-website/logo/nocxa.svg" />
       </Head>
 
-      <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)]">
+      <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)] scroll-smooth transition ease-in-out duration-500">
         {/* NAV BAR */}
         <header className="w-full z-20">
           <NavBar />
         </header>
 
         {/* BODY */}
-        {/* <Background /> */}
-        <main className="container m-auto px-4 md:px-0 z-10">
+        <main className="m-auto z-10">
           <div>{/* <Toaster /> */}</div>
           <div className="h-16"></div>
           {children}
