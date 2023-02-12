@@ -38,13 +38,6 @@ export default function Layout({ title, children }: LayoutProps) {
           href="/nocxa-website/logo/nocxa.png"
         ></link>
         <link rel="icon" href="/nocxa-website/logo/nocxa.svg" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)] scroll-smooth transition ease-in-out duration-500">

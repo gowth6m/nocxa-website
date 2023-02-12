@@ -1,7 +1,5 @@
 @tailwind base;
 
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
-
 /* Firefox */
 * {
   scrollbar-width: thin;
