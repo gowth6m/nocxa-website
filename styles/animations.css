@@ -161,9 +161,27 @@
             transform: translate(0, 0);
         }
         50% {
-            transform: translate(0px, 10px) skewX(-3deg);
+            transform: translate(0px, 10px) skewX(-5deg);
         }
         100% {
             transform: translate(0, 0);
         }
     }
+
+    .intro-moon-circle {
+      animation: moon-animate-c 4s infinite ease-in-out;
+  }
+
+  @keyframes
+  moon-animate-c {
+      0% {
+          transform: translate(0, 0);
+      }
+     
+      50% {
+          transform: translate(0px, 15px) skewX(-5deg);
+      }
+      100% {
+          transform: translate(0, 0);
+      }
+  }

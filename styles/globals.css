@@ -34,7 +34,10 @@
   --purple: #a166ed;
   --pink: #FF6584;
   --blue: #5777ff;
+  --lightWhite: #f2f2f2;
+  --cream: #fff0eb;
   --grey: #16181c;
+  --leafgrey: #3f3d56;
   --black: #070707;
   --white: #EFE9F4;
   --mainBlack: #070707;
@@ -163,13 +166,13 @@ a {
 }
 
 .sec-button-orange {
-  @apply px-4 py-3 rounded-full text-white font-bold hover:bg-[var(--purple)] bg-[var(--orange)] cursor-pointer text-center;
+  @apply px-4 py-2 rounded-full text-white font-bold hover:bg-[var(--purple)] bg-[var(--orange)] cursor-pointer text-center;
   transition: background-position 0.5s ease-in-out;
   /* border: 2px solid var(--orange); */
 }
 
-.no-header-height {
-  height: calc(100vh - 3.5rem);
+.h-h-full {
+  height: calc(100vh - 4rem);
 }
 
 .border-text {
@@ -184,6 +187,16 @@ a {
 
 .grad-bg-text {
   background: linear-gradient(90deg,#a166ed,#5777ff);
+  font-weight: 900;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.grad-bg-text-pink {
+  background: linear-gradient(90deg,var(--orange),var(--orange));
   font-weight: 900;
   background-size: 100%;
   -webkit-background-clip: text;

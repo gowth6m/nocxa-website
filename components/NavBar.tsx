@@ -52,11 +52,11 @@ export default function NavBar() {
               : "fixed top-0 w-full flex justify-center items-center h-16 bg-[var(--black)]"
           }
         >
-          <div className="container fixed mx-auto h-16 flex">
+          <div className="container fixed mx-auto h-16 flex font-museo">
             {/* MOBILE */}
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center w-full mx-2 md:mx-4">
               {/* LOGO */}
-              <div className="h-8 m-2 md:flex-1 flex justify-start md:w-full">
+              <div className="h-8 md:flex-1 flex justify-start md:w-full">
                 <NocxaLogo
                   secondaryColor="var(--purple)"
                   className="md:mr-auto md:w-auto"
@@ -92,8 +92,8 @@ export default function NavBar() {
                 })}
               </div>
 
-              <div className="hidden md:flex md:flex-1">
-                <Link className="ml-auto sec-button mx-2" href="/contact">
+              <div className="hidden lg:flex md:flex-1">
+                <Link className="ml-auto sec-button" href="/contact">
                   Get in touch
                 </Link>
               </div>
@@ -159,7 +159,7 @@ export default function NavBar() {
 }
 
 // CSS for the NavBar.tsx component
-const cssNavLinks = "text-[var(--purple)] text-lg font-semibold m-2 hover:text-[var(--white)] hover:bg-[var(--purple)] rounded-full py-2 px-4";
+const cssNavLinks = "text-[var(--purple)] text-lg font-semibold lg:m-2 hover:text-[var(--white)] hover:bg-[var(--purple)] rounded-full py-2 px-4";
 
 const socialLinks = "h-8 w-8 md:h-12 md:w-12 hover:text-[var(--purple)]";
 
