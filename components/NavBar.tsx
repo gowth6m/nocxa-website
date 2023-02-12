@@ -60,7 +60,7 @@ export default function NavBar() {
               <div className="h-8 md:flex-1 flex justify-start md:w-full mx-0">
                 <NocxaLogo
                   secondaryColor="var(--purple)"
-                  className="md:mr-auto md:w-auto mx-0"
+                  className="md:mr-auto md:w-auto mx-0 border-2 "
                 />
               </div>
 

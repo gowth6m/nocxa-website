@@ -33,7 +33,6 @@ export default function Layout({ title, children }: LayoutProps) {
         <meta name="apple-mobile-web-app-capable" content="yes"></meta>
         <meta name="robots" content="index, follow"></meta>
         <meta name="apple-mobile-web-app-title" content="Nocxa"></meta>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
         <link
           rel="apple-touch-icon"
           href="/nocxa-website/logo/nocxa.png"
