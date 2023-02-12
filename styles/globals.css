@@ -42,6 +42,8 @@
   --mainBlack: #070707;
   --mainSubBlack: #8f8f8f;
   --mainGrey: #1f2029;
+  --tintBlack: #16181c7e;
+  --tintBlack2: #16181cbe;
 }
 
 :root {
@@ -171,7 +173,7 @@ a {
 }
 
 .h-h-full {
-  height: calc(100vh - 4rem);
+  height: calc(100svh - 4rem);
 }
 
 .border-text {
