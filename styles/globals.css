@@ -37,7 +37,8 @@
   --lightWhite: #f2f2f2;
   --cream: #fff0eb;
   --grey: #16181c;
-  --leafgrey: #3f3d56;
+  --navblack: #070707;
+  --leafgrey: #2f2e41;
   --black: #070707;
   --white: #EFE9F4;
   --mainBlack: #070707;
@@ -205,4 +206,7 @@ a {
   -moz-text-fill-color: transparent;
 }
 
-
+.vert-text {
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+}

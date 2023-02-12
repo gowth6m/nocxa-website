@@ -32,7 +32,8 @@ export default function NavBar() {
         setVisible(false);
       }
       setPrevScrollPos(currentScrollPos);
-    } else {
+    } 
+    else {
       setVisible(true);
     }
   };
@@ -49,7 +50,7 @@ export default function NavBar() {
           className={
             visible
               ? "fixed top-0 w-full flex justify-center items-center h-16"
-              : "fixed top-0 w-full flex justify-center items-center h-16 bg-[var(--black)]"
+              : "fixed top-0 w-full flex justify-center items-center h-16 bg-[var(--navblack)]"
           }
         >
           <div className="container fixed mx-auto h-16 flex font-museo">
