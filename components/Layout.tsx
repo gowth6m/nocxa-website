@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
@@ -37,6 +38,13 @@ export default function Layout({ title, children }: LayoutProps) {
           href="/nocxa-website/logo/nocxa.png"
         ></link>
         <link rel="icon" href="/nocxa-website/logo/nocxa.svg" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)] scroll-smooth transition ease-in-out duration-500">
@@ -53,7 +61,7 @@ export default function Layout({ title, children }: LayoutProps) {
         </main>
 
         {/* FOOTER */}
-        <footer className="flex h-auto justify-center items-center bg-[var(--black)] text-white z-10">
+        <footer className="flex h-auto justify-center items-center bg-[var(--black)] text-white z-10 font-museo">
           <Footer />
         </footer>
       </div>
