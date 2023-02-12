@@ -12,8 +12,8 @@ import { NocxaLogo } from "./misc/Icons";
 export default function Footer() {
   return (
     <div className="my-8 mb-10">
-      <div className="container w-full mx-2">
-        <div className="flex flex-col md:flex-row md:gap-4 gap-12">
+      <div className="container w-full mx-auto">
+        <div className="flex flex-col md:flex-row md:gap-4 gap-12 px-2">
           <div className="flex flex-1 flex-row flex-wrap gap-4 md:order-2 justify-center items-center">
             <Link className="hover:text-[var(--purple)]" href="#about">
               Services
