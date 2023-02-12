@@ -53,7 +53,7 @@ export default function Layout({ title, children }: LayoutProps) {
         </main>
 
         {/* FOOTER */}
-        <footer className="flex h-auto justify-center items-center bg-[var(--black)] text-white">
+        <footer className="flex h-auto justify-center items-center bg-[var(--black)] text-white z-10">
           <Footer />
         </footer>
       </div>
