@@ -57,10 +57,10 @@ export default function NavBar() {
             {/* MOBILE */}
             <div className="flex justify-between items-center w-full md:mx-4 mx-1">
               {/* LOGO */}
-              <div className="h-8 w-30 px-0 md:flex-1 flex justify-start md:w-full mx-0">
+              <div className="px-0 md:flex-1 flex justify-start md:w-full mx-0">
                 <NocxaLogo
                   secondaryColor="var(--purple)"
-                  className="md:mr-auto md:w-auto mx-0"
+                  className="md:mr-auto md:w-auto mx-0 h-8 w-30"
                 />
               </div>
 
