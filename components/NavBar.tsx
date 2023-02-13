@@ -54,7 +54,7 @@ export default function NavBar() {
                 {true ? (
                   <NocxaLogo
                     secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-0 h-8 w-34"
+                    className="md:mr-auto md:w-auto mx-0 h-8 w-36"
                   />
                 ) : (
                   <NocxaIcon
@@ -118,7 +118,7 @@ export default function NavBar() {
                 {visible ? (
                   <NocxaLogo
                     secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-0 h-8 w-34"
+                    className="md:mr-auto md:w-auto mx-0 h-8 w-36"
                   />
                 ) : (
                   <NocxaIcon
@@ -189,7 +189,7 @@ function MobileNavMenu({ menuOpened, setMenuOpened, navLinks }: any) {
         <div className="flex-1-1 md:flex-1 flex justify-start md:w-full mx-0 px-0 my-2">
           <NocxaLogo
             secondaryColor="var(--pink)"
-            className="md:mr-auto md:w-auto mx-0 h-8 w-34"
+            className="md:mr-auto md:w-auto mx-0 h-8 w-36"
           />
         </div>
         <div
