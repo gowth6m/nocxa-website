@@ -181,7 +181,7 @@ export default function NavBar() {
 function MobileNavMenu({ menuOpened, setMenuOpened, navLinks }: any) {
   return (
     <motion.div
-      className="bg-[var(--black)] w-full h-full fixed origin-top flex flex-col text-center z-40 items-center"
+      className="bg-[var(--black)] w-full h-full fixed origin-top flex flex-col text-center z-40 items-center font-museo"
       variants={variants_0}
       animate={menuOpened ? "transform" : "stop"}
     >

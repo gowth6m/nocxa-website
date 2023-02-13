@@ -184,6 +184,11 @@ a {
 
 .font-museo {
   font-family: 'MuseoModerno', cursive;
+  /* font-family: 'Comfortaa', cursive; */
+}
+
+.font-comfortaa {
+  font-family: 'Comfortaa', cursive;
 }
 
 .grad-bg-text {

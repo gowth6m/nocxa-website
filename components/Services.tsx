@@ -14,13 +14,15 @@ export default function Services() {
                 What can we do?
               </h1>
             </div>
-            <div className="text-[var(--cream)] flex">
+            <div className="text-[var(--cream)] flex font-comfortaa">
               <div className="md:w-3/6">
                 Nocxa is a student-led software company is dedicated to
                 delivering innovative web development, app development and
-                machine learning solutions. Our team of talented and motivated
-                developers provide cutting-edge technology services to
-                businesses and individuals.
+                machine learning solutions.
+                <br />
+                <br />
+                Our team of talented and motivated developers provide
+                cutting-edge technology services to businesses and individuals.
               </div>
             </div>
           </div>
