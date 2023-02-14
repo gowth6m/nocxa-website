@@ -215,3 +215,26 @@ a {
   writing-mode: vertical-lr;
   text-orientation: sideways;
 }
+
+.hover-underline {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--purple);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hover-underline:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}

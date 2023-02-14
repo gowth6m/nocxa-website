@@ -15,8 +15,8 @@ export default function Intro() {
               Bringing new ideas to life.
             </h1>
             <div className="flex flex-row">
-              <div className="my-4 flex flex-row items-center justify-center cursor-pointer rounded-full hover:bg-[var(--leafgrey)] pr-4">
-                <div className="w-auto text-lg md:text-2xl font-museo px-4 py-1 md:py-2 text-[var(--lightWhite)] rounded-full">
+              <div className="my-4 flex flex-row items-center justify-center cursor-pointer rounded-full hover-underline">
+                <div className="w-auto text-2xl font-museo  py-1 md:py-2 text-[var(--lightWhite)] rounded-full pr-3">
                   See our <span className="text-[var(--pink)]">work</span>
                 </div>
                 <div className="h-[0.7rem] w-[0.7rem] rounded-full">

@@ -250,7 +250,7 @@ function Socials() {
 
 // CSS for the NavBar.tsx component
 const cssNavLinks =
-  "text-[var(--purple)] text-lg font-semibold lg:m-2 hover:text-[var(--lightWhite)] hover:bg-[var(--purple)] rounded-full py-2 px-4";
+  "text-[var(--purple)] text-lg font-semibold lg:m-2 hover-underline rounded-full py-2 px-4";
 
 const socialLinks =
   "h-8 w-8 md:h-12 md:w-12 hover:text-[var(--purple)] text-[var(--lightWhite)]";
