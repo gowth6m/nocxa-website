@@ -86,7 +86,7 @@ export default function NavBar() {
                 })}
               </div>
 
-              <div className="hidden lg:flex md:flex-1">
+              <div className="hidden lg:flex md:flex-1 mx-3">
                 <Link className="ml-auto sec-button" href="/contact">
                   Get in touch
                 </Link>
@@ -143,7 +143,7 @@ export default function NavBar() {
                 })}
               </div>
 
-              <div className="hidden lg:flex md:flex-1">
+              <div className="hidden lg:flex md:flex-1 mx-3">
                 <Link className="ml-auto sec-button" href="/contact">
                   Get in touch
                 </Link>
