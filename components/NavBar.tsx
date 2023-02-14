@@ -48,24 +48,17 @@ export default function NavBar() {
         <div className="fixed top-2 w-full flex justify-center items-center h-16 bg-transparent">
           <div className="container fixed mx-auto h-16 flex font-museo">
             {/* MOBILE */}
-            <div className="flex justify-between items-center w-full md:mx-4 mx-1">
+            <div className="flex justify-between items-center w-full md:mx-4">
               {/* LOGO */}
-              <div className="flex-1-1 md:flex-1 flex justify-start md:w-full mx-0 px-0">
-                {true ? (
-                  <NocxaLogo
-                    secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-0 h-8 w-36"
-                  />
-                ) : (
-                  <NocxaIcon
-                    secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-1 h-14 w-14"
-                  />
-                )}
+              <div className="flex-1-1 md:flex-1 flex justify-start md:w-full px-0 m-3">
+                <NocxaLogo
+                  secondaryColor="var(--purple)"
+                  className="md:mr-auto md:w-auto h-8 w-36"
+                />
               </div>
 
               <div
-                className="m-2 cursor-pointer md:hidden z-50"
+                className="cursor-pointer md:hidden z-50 m-4"
                 onClick={() => {
                   setMenuOpened(!menuOpened);
                 }}
@@ -114,22 +107,15 @@ export default function NavBar() {
             {/* MOBILE */}
             <div className="flex justify-between items-center w-full md:mx-4 mx-1">
               {/* LOGO */}
-              <div className="flex-1-1 md:flex-1 flex justify-start md:w-full mx-0 px-0">
-                {visible ? (
-                  <NocxaLogo
-                    secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-0 h-8 w-36"
-                  />
-                ) : (
-                  <NocxaIcon
-                    secondaryColor="var(--purple)"
-                    className="md:mr-auto md:w-auto mx-1 h-14 w-14"
-                  />
-                )}
+              <div className="flex-1-1 md:flex-1 flex justify-start md:w-full m-3 px-0">
+                <NocxaIcon
+                  secondaryColor="var(--purple)"
+                  className="md:mr-auto md:w-auto h-14 w-14"
+                />
               </div>
 
               <div
-                className="m-2 cursor-pointer md:hidden z-50"
+                className="cursor-pointer md:hidden z-50 m-3"
                 onClick={() => {
                   setMenuOpened(!menuOpened);
                 }}
@@ -186,14 +172,14 @@ function MobileNavMenu({ menuOpened, setMenuOpened, navLinks }: any) {
       animate={menuOpened ? "transform" : "stop"}
     >
       <div className="w-full p-2 flex flex-row justify-between">
-        <div className="flex-1-1 md:flex-1 flex justify-start md:w-full mx-0 px-0 my-2">
+        <div className="flex-1-1 md:flex-1 flex justify-start md:w-full mx-2 my-3 px-0">
           <NocxaLogo
             secondaryColor="var(--pink)"
-            className="md:mr-auto md:w-auto mx-0 h-8 w-36"
+            className="md:mr-auto md:w-auto h-8 w-36"
           />
         </div>
         <div
-          className="mx-2 my-2 cursor-pointer md:hidden z-50"
+          className="cursor-pointer md:hidden z-50 m-3"
           onClick={() => {
             setMenuOpened(!menuOpened);
           }}

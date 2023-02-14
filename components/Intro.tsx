@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { ArrowDownIcon } from "./misc/Icons";
 import { ArrowArt, Illustration1 } from "./misc/Illustrations.";
@@ -38,12 +40,27 @@ export default function Intro() {
             <h1 className="text-4xl font-bold font-museo mix-blend-difference z-10 w-5/6 mb-[-16%]">
               Bringing new ideas to life.
             </h1>
-            <Illustration1 className="w-[80%] h-auto" fill="var(--orange)" />
+            <Illustration1 className="w-[90%] h-auto" fill="var(--orange)" />
           </div>
-          <div className="flex flex-row">
-            <div className="text-3xl font-bold font-museo w-4/6 text-right ml-auto italic my-2">
-              <span className="grad-bg-text">Noc</span>turnal{" "}
-              <span className="grad-bg-text">x A</span>gency
+          <div className="flex flex-row w-[80%]">
+            <div className="text-3xl font-bold font-museo w-4/6 text-right ml-auto my-2">
+              {/* <span className="grad-bg-text">Noc</span>turnal{" "}
+              <span className="grad-bg-text">x A</span>gency */}
+              See our <br />
+              <span className="text-[var(--purple)]"> work</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-[100%] animate-pulse">
+            <div className="vert-text text-[var(--leafgrey)] text-xl font-museo absolute bottom-[3rem] left-3">
+              scroll
+            </div>
+
+            <div className="h-[0.7rem] w-[0.7rem] absolute bottom-[1.8rem] left-5 rounded-full">
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="text-[var(--leafgrey)] rotate-90"
+              />
             </div>
           </div>
         </div>
