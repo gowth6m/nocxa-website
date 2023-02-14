@@ -1,7 +1,7 @@
 import React from "react";
 import Illustration2 from "./misc/Illustrations.";
 
-export default function Services() {
+export default function About() {
   return (
     <div className="h-auto w-[100vw]">
       <div className="container mx-auto p-4 md:p-0 h-full my-2 md:my-8 md:w-[100%]">
