@@ -8,16 +8,31 @@ export default function Intro() {
   return (
     <>
       {/* Desktop */}
-      <div className="container mx-auto h-h-full hidden md:flex">
+      <div className="container mx-auto h-h-full hidden md:flex flex-col items-center justify-center">
+        {/* <div className="h-16 w-full"></div> */}
         <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
           <div className="flex-1 flex flex-col justify-center">
             <h1 className="text-4xl md:text-6xl lg:text-[5rem] font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
             </h1>
+
+            <div>
+              <div className="text-[var(--cream)] font-comfortaa text-sm md:text-base my-4">
+                A{" "}
+                <span className="grad-bg-text text-lg italic">
+                  {" "}
+                  student-led{" "}
+                </span>{" "}
+                software development company is dedicated to delivering
+                innovative web development, app development and machine learning
+                solutions.
+              </div>
+            </div>
+
             <div className="flex flex-row">
               <div className="my-4 flex flex-row items-center justify-center cursor-pointer rounded-full hover-underline">
-                <div className="w-auto text-2xl font-museo  py-1 md:py-2 text-[var(--lightWhite)] rounded-full pr-3">
-                  See our <span className="text-[var(--pink)]">work</span>
+                <div className="w-auto text-2xl font-museo  py-1 md:py-2 text-[var(--pink)] rounded-full pr-3">
+                  See our <span className="text-[var(--lightwhite)]">work</span>
                 </div>
                 <div className="h-[0.7rem] w-[0.7rem] rounded-full">
                   <FontAwesomeIcon
