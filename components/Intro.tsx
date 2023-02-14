@@ -12,7 +12,7 @@ export default function Intro() {
         {/* <div className="h-16 w-full"></div> */}
         <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
           <div className="flex-1 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-6xl lg:text-[5rem] font-bold grad-bg-text font-museo">
+            <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
             </h1>
 
@@ -45,7 +45,7 @@ export default function Intro() {
           </div>
 
           <div className="flex-1 flex items-center justify-center my-8">
-            <Illustration1 className="w-[90%] h-auto" fill="var(--orange)" />
+            <Illustration1 className="w-[90%] h-auto px-4" fill="var(--orange)" />
           </div>
         </div>
       </div>
