@@ -3,8 +3,8 @@ import Illustration2 from "./misc/Illustrations.";
 
 export default function About() {
   return (
-    <div className="h-auto w-[100vw]">
-      <div className="container mx-auto p-4 md:p-0 h-full my-2 md:my-8 md:w-[100%]">
+    <div className="h-auto w-[100vw] flex justify-center items-center">
+      <div className="container p-4 md:p-0 h-full my-2 md:my-8 md:w-[100%] md:mx-8">
         <div className="rounded-3xl bg-[var(--leafgrey)] h-full">
           <div className="flex flex-col justify-between items-center w-full px-4 md:px-8 h-full md:flex-row">
             <div className="flex flex-col md:flex-1">

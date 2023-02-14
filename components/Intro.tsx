@@ -15,8 +15,19 @@ export default function Intro() {
               Bringing new ideas to life.
             </h1>
             <div className="flex flex-row">
-              <div className="mt-8 md:my-8 w-auto text-lg md:text-xl font-museo px-4 py-1 md:py-2 bg-[var(--orange)] border-2 border-[var(--orange)] text-[var(--lightWhite)] rounded-full cursor-pointer hover:bg-[var(--pink)] hover:border-[var(--pink)]">
+              {/* <div className="mt-8 md:my-8 w-auto text-lg md:text-xl font-museo px-4 py-1 md:py-2 bg-[var(--orange)] border-2 border-[var(--orange)] text-[var(--lightWhite)] rounded-full cursor-pointer hover:bg-[var(--pink)] hover:border-[var(--pink)]">
                 See our work
+              </div> */}
+              <div className="my-10 flex flex-row items-center justify-center cursor-pointer rounded-full hover:bg-[var(--leafgrey)] pr-4">
+                <div className="w-auto text-lg md:text-2xl font-museo px-4 py-1 md:py-2 text-[var(--lightWhite)] rounded-full">
+                  See our <span className="text-[var(--pink)]">work</span>
+                </div>
+                <div className="h-[0.7rem] w-[0.7rem] rounded-full">
+                  <FontAwesomeIcon
+                    icon={faPlay}
+                    className="text-[var(--pink)] rotate-90"
+                  />
+                </div>
               </div>
             </div>
           </div>
