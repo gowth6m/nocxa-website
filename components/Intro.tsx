@@ -9,16 +9,13 @@ export default function Intro() {
     <>
       {/* Desktop */}
       <div className="container mx-auto h-h-full hidden md:flex">
-        <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12">
+        <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
           <div className="flex-1 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-8xl font-bold grad-bg-text font-museo">
+            <h1 className="text-4xl md:text-6xl lg:text-[5rem] font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
             </h1>
             <div className="flex flex-row">
-              {/* <div className="mt-8 md:my-8 w-auto text-lg md:text-xl font-museo px-4 py-1 md:py-2 bg-[var(--orange)] border-2 border-[var(--orange)] text-[var(--lightWhite)] rounded-full cursor-pointer hover:bg-[var(--pink)] hover:border-[var(--pink)]">
-                See our work
-              </div> */}
-              <div className="my-10 flex flex-row items-center justify-center cursor-pointer rounded-full hover:bg-[var(--leafgrey)] pr-4">
+              <div className="my-4 flex flex-row items-center justify-center cursor-pointer rounded-full hover:bg-[var(--leafgrey)] pr-4">
                 <div className="w-auto text-lg md:text-2xl font-museo px-4 py-1 md:py-2 text-[var(--lightWhite)] rounded-full">
                   See our <span className="text-[var(--pink)]">work</span>
                 </div>
