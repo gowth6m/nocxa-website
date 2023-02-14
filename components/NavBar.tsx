@@ -45,7 +45,7 @@ export default function NavBar() {
     <>
       {/* BEFORE SCROLL */}
       {visible && (
-        <div className="fixed top-2 w-full flex justify-center items-center h-16 bg-transparent">
+        <div className="fixed top-0 w-full flex justify-center items-center h-16 bg-transparent">
           <div className="container fixed mx-auto h-16 flex font-museo">
             {/* MOBILE */}
             <div className="flex justify-between items-center w-full md:mx-4">
