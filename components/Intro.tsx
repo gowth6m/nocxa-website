@@ -8,10 +8,10 @@ export default function Intro() {
   return (
     <>
       {/* Desktop */}
-      <div className="container mx-auto h-auto hidden md:flex">
-        <div className="w-full flex flex-col md:flex-row relative px-4 mb-12">
-          <div className="flex-1 flex flex-col">
-            <h1 className="text-4xl md:text-8xl font-bold grad-bg-text font-museo mt-8 md:mt-24 lg:mt-40">
+      <div className="container mx-auto h-h-full hidden md:flex">
+        <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12">
+          <div className="flex-1 flex flex-col justify-center">
+            <h1 className="text-4xl md:text-8xl font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
             </h1>
             <div className="flex flex-row">

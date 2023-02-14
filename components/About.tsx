@@ -23,10 +23,11 @@ export default function About() {
                     {" "}
                     student-led{" "}
                   </span>{" "}
-                  software company is dedicated to delivering innovative web
-                  development, app development and machine learning solutions.
-                  <br />
-                  <br />
+                  software development company is dedicated to delivering
+                  innovative web development, app development and machine
+                  learning solutions.
+                  <br className="md:hidden"/>
+                  <br className="md:hidden"/>
                   Our team of talented and motivated developers provide
                   cutting-edge technology services to businesses and
                   individuals.
