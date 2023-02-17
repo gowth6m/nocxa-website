@@ -72,7 +72,7 @@ export default function Footer() {
               <NocxaLogo secondaryColor="var(--purple)" />
             </div>
             <div className="footer-brand-text">
-              2019 &copy; Noxca All rights reserved
+              2023 &copy; Noxca All rights reserved
             </div>
           </div>
         </div>

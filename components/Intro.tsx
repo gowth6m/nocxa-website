@@ -10,29 +10,29 @@ export default function Intro() {
       {/* Desktop */}
       <div className="container mx-auto h-h-full hidden md:flex flex-col items-center justify-center">
         {/* <div className="h-16 w-full"></div> */}
-        <div className="w-[80%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
+        <div className="w-[90%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
           <div className="flex-1 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold grad-bg-text font-museo">
+            <h1 className="text-4xl md:text-5xl lg:text-[5rem] font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
             </h1>
 
             <div>
               <div className="text-[var(--cream)] font-comfortaa text-sm md:text-base my-4">
-                A{" "}
-                <span className="grad-bg-text text-lg italic">
+                We&#39;re the rebellious rebels of software agencies, based in
+                <span className="grad-bg-text text-lg italic pr-[2px]">
                   {" "}
-                  student-led{" "}
+                  London{" "}
                 </span>{" "}
-                software development company is dedicated to delivering
-                innovative web development, app development and machine learning
-                solutions.
+                and devoted to crafting one-of-a-kind software solutions for
+                brands that won&#39;t settle for mediocrity. Innovation
+                isn&#39;t just our jam, it&#39;s our whole darn orchestra!
               </div>
             </div>
 
             <div className="flex flex-row">
               <div className="my-4 flex flex-row items-center justify-center cursor-pointer rounded-full hover-underline">
-                <div className="w-auto text-2xl font-museo  py-1 md:py-2 text-[var(--pink)] rounded-full pr-3">
-                  See our <span className="text-[var(--lightwhite)]">work</span>
+                <div className="w-auto text-2xl font-museo  py-1 md:py-2 grad-bg-text rounded-full pr-3">
+                  See our <span className="text-[var(--purple)]">work</span>
                 </div>
                 <div className="h-[0.7rem] w-[0.7rem] rounded-full">
                   <FontAwesomeIcon
@@ -45,7 +45,10 @@ export default function Intro() {
           </div>
 
           <div className="flex-1 flex items-center justify-center my-8">
-            <Illustration1 className="w-[90%] h-auto px-4" fill="var(--orange)" />
+            <Illustration1
+              className="w-[90%] h-auto px-4"
+              fill="var(--orange)"
+            />
           </div>
         </div>
       </div>
