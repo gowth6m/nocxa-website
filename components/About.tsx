@@ -16,7 +16,7 @@ export default function About() {
                   What&#39;s Nocxa?
                 </h1>
               </div>
-              <div className="text-[var(--cream)] flex font-comfortaa text-sm md:mb-8">
+              <div className="text-[var(--cream)] flex font-comfortaa text-base md:mb-8">
                 <div className="md:text-base">
                   We&#39;re not your average software development agency.
                   We&#39;re more like Willy Wonka&#39;s factory, except instead
@@ -61,7 +61,7 @@ export default function About() {
                 <span className="grad-bg-text text-lg mr-2">01. </span>
                 <span className="font-black md:text-4xl">Beauty</span>
               </div>
-              <div className="text-sm md:text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
+              <div className="text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
                 Developing stunning one-of-a-kind digital design that catches
                 people’s eye and brings your brand to life online.
               </div>
@@ -77,7 +77,7 @@ export default function About() {
                 <span className="grad-bg-text text-lg mr-2">02. </span>
                 <span className="font-black md:text-4xl">Thought</span>
               </div>
-              <div className="text-sm md:text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
+              <div className="text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
                 As a web design agency, we love to deliver meaningful and
                 intuitive user experiences that build trust with your target
                 audience.
@@ -94,7 +94,7 @@ export default function About() {
                 <span className="grad-bg-text text-lg mr-2">03. </span>
                 <span className="font-black md:text-4xl">Impact</span>
               </div>
-              <div className="text-sm md:text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
+              <div className="text-base font-comfortaa my-4 max-w-[calc(1280px/3)]">
                 Designing tailor made solutions that resonate with your
                 customers and drives them to act.
               </div>
