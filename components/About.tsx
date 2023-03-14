@@ -3,13 +3,29 @@ import Illustration2 from "./misc/Illustrations.";
 
 export default function About() {
   return (
-    <div className="h-auto w-[100vw] flex justify-center items-center">
+    <div className="h-auto w-[100vw] flex justify-center items-center relative bg-[var(--leafgrey)]">
+      <div className="custom-shape-divider-top-1678749649">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            className="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      {/* Below waves */}
       <div className="container p-4 md:p-0 h-full my-2 md:my-8 md:w-[100%] md:mx-8">
-        <div className="rounded-3xl bg-[var(--leafgrey)] h-full">
-          <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row">
+        {/* Whats nocxa? */}
+        {/* <div className="rounded-3xl bg-[var(--leafgrey)] h-full"> */}
+        <div className="rounded-3xl h-full">
+          <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row mt-12">
             <div className="flex flex-col md:flex-1 max-w-[calc(1280px/2)]">
               <div className="flex flex-col font-museo my-8 w-full text-left justify-center align-middle">
-                <div className="italic grad-bg-text text-lg md:text-2xl">
+                <div className="italic grad-bg-text text-base md:text-xl">
                   ABOUT US
                 </div>
                 <h1 className="text-3xl md:text-5xl font-bold text-[var(--cream)] w-full text-left">
@@ -17,7 +33,7 @@ export default function About() {
                 </h1>
               </div>
               <div className="text-[var(--cream)] flex font-comfortaa text-base md:mb-8">
-                <div className="md:text-base">
+                <div className="md:text-base z-10">
                   We&#39;re not your average software development agency.
                   We&#39;re more like Willy Wonka&#39;s factory, except instead
                   of candy, we whip up beautiful,{" "}
@@ -42,17 +58,17 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="flex w-full items-center justify-center mt-4 mb-8 md:flex-1 max-w-[calc(1280px/2)]">
-              <Illustration2 className="h-40 w-5/6 md:w-full md:h-80" />
+            <div className="flex w-full items-center justify-center mt-4 mb-8 md:flex-1 max-w-[calc(1280px/2)] relative about-illustration">
+              <Illustration2 className="h-40 w-5/6 md:w-full md:h-80  z-10" />
             </div>
           </div>
         </div>
 
         {/* THREE FOCUS */}
         <div className="w-full p-2 md:p-4 my-16 md:my-36">
-          <div className="text-3xl md:text-6xl font-museo w-full md:w-5/6">
-            We design and develop bespoke software with three things in mind
-            <span className="grad-bg-text"> three things in mind;</span>
+          <div className="text-3xl md:text-6xl font-museo w-full md:w-5/6 mt-24">
+            We design and develop bespoke software with
+            <span className="grad-bg-text"> three things in mind.</span>
           </div>
 
           <div className="text-2xl mt-16 md:mt-24 flex flex-col md:flex-row">

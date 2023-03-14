@@ -99,7 +99,7 @@ export default function NavBar() {
       {/* AFTER SCROLL */}
       {!visible && (
         <motion.div
-          className="fixed top-0 w-full flex justify-center items-center h-16 md:bg-[var(--black)] bg-transparent origin-top"
+          className="fixed top-0 w-full flex justify-center items-center h-16 bg-transparent origin-top"
           variants={variants_0}
           animate={!visible ? "transform" : "stop"}
         >
