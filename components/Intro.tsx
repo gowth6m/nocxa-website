@@ -66,7 +66,7 @@ export default function Intro() {
             <div className="text-3xl font-bold font-museo w-5/6 text-right ml-auto my-2">
               {/* See our <br />
               <span className="text-[var(--purple)]"> work</span> */}
-              <div className="text-lg text-[var(--cream)] mb-6">
+              <div className="text-lg text-[var(--cream)] mb-4">
                 We don&#39;t just think
                 <span className="grad-bg-text"> outside the box</span>, we
                 redesign it.

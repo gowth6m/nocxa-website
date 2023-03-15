@@ -24,7 +24,7 @@ export default function About() {
         <div className="rounded-3xl h-full">
           <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row mt-12">
             <div className="flex flex-col md:flex-1 max-w-[calc(1280px/2)]">
-              <div className="flex flex-col font-museo my-8 w-full text-left justify-center align-middle">
+              <div className="flex flex-col font-museo mb-8 mt-16 w-full text-left justify-center align-middle">
                 <div className="italic grad-bg-text text-base md:text-xl">
                   ABOUT US
                 </div>
@@ -58,7 +58,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="flex w-full items-center justify-center mt-4 mb-8 md:flex-1 max-w-[calc(1280px/2)] relative about-illustration">
+            <div className="flex w-full items-center justify-center mt-12 md:mt-0 mb-8 md:flex-1 max-w-[calc(1280px/2)] relative about-illustration">
               <Illustration2 className="h-40 w-5/6 md:w-full md:h-80  z-10" />
             </div>
           </div>
