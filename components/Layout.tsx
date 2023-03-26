@@ -37,7 +37,7 @@ export default function Layout({ title, children }: LayoutProps) {
           rel="apple-touch-icon"
           href="/nocxa-website/logo/nocxa.png"
         ></link>
-        <link rel="icon" href="/nocxa-website/logo/nocxa.svg" />
+        <link rel="icon" href="/logo/nocxa.svg" />
       </Head>
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)] scroll-smooth transition ease-in-out duration-500">
