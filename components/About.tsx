@@ -20,7 +20,6 @@ export default function About() {
       {/* Below waves */}
       <div className="container p-4 md:p-0 h-full my-2 md:my-8 md:w-[100%] md:mx-8">
         {/* Whats nocxa? */}
-        {/* <div className="rounded-3xl bg-[var(--leafgrey)] h-full"> */}
         <div className="rounded-3xl h-full">
           <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row mt-12 mb-16 md:mb-28">
             <div className="flex flex-col md:flex-1 max-w-[calc(1280px/2)]">

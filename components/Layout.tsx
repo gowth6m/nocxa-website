@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
+import React, { useEffect, useRef } from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import ReactDOM from "react-dom";
 
 type LayoutProps = {
   title?: string;
@@ -9,6 +11,27 @@ type LayoutProps = {
 };
 
 export default function Layout({ title, children }: LayoutProps) {
+  const hoverLight = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handlePointerMove = (event: any) => {
+      const { clientX, clientY }: any = event;
+
+      if (hoverLight.current) {
+        hoverLight.current.animate(
+          { left: `${clientX}px`, top: `${clientY}px` },
+          { duration: 3000, fill: "forwards" }
+        );
+      }
+    };
+
+    window.addEventListener("pointermove", handlePointerMove);
+
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -41,6 +64,10 @@ export default function Layout({ title, children }: LayoutProps) {
       </Head>
 
       <div className="flex min-h-screen flex-col justify-between bg-[var(--grey)] scroll-smooth transition ease-in-out duration-500">
+        {/* HOVER LIGHT */}
+        <div className="hidden md:block" ref={hoverLight} id="hoverLight"></div>
+        <div className="absolute h-full w-full backDropper"></div>
+
         {/* NAV BAR */}
         <header className="w-full z-20">
           <NavBar />

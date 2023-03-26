@@ -10,7 +10,7 @@ export default function Intro() {
       {/* Desktop */}
       <div className="container mx-auto h-h-full hidden md:flex flex-col items-center justify-center">
         {/* <div className="h-16 w-full"></div> */}
-        <div className="w-[90%] mx-auto flex flex-col md:flex-row relative px-4 mb-12 items-center justify-center">
+        <div className="w-[90%] mx-auto flex flex-col md:flex-row relative px-4 mb-4 items-center justify-center">
           <div className="flex-1 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-[5rem] font-bold grad-bg-text font-museo">
               Bringing new ideas to life.
