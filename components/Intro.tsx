@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { ArrowDownIcon } from "./misc/Icons";
-import { ArrowArt, Illustration1 } from "./misc/Illustrations.";
+import { ArrowArt, Illustration1 } from "./misc/Illustrations";
 
 export default function Intro() {
   return (
