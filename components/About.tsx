@@ -1,5 +1,5 @@
 import React from "react";
-import Illustration2 from "./misc/Illustrations.";
+import Illustration2 from "./misc/Illustrations";
 
 export default function About() {
   return (
