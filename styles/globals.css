@@ -44,6 +44,7 @@
   --mainGrey: #1f2029;
   --tintBlack: #16181c7e;
   --tintBlack2: #16181cbe;
+  --tintBlack3: #16171c;
 }
 
 :root {
@@ -237,4 +238,13 @@ a {
 .hover-underline:hover::after {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.text-sideways {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.lineh1 {
+  line-height: 1;
 }

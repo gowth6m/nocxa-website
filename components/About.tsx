@@ -22,7 +22,7 @@ export default function About() {
         {/* Whats nocxa? */}
         {/* <div className="rounded-3xl bg-[var(--leafgrey)] h-full"> */}
         <div className="rounded-3xl h-full">
-          <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row mt-12">
+          <div className="flex flex-col justify-between items-center w-full mx-auto px-4 md:pl-8 md:pr-4 h-full md:flex-row mt-12 mb-16 md:mb-28">
             <div className="flex flex-col md:flex-1 max-w-[calc(1280px/2)]">
               <div className="flex flex-col font-museo mb-8 mt-16 w-full text-left justify-center align-middle">
                 <div className="italic grad-bg-text text-base md:text-xl">
@@ -64,8 +64,10 @@ export default function About() {
           </div>
         </div>
 
+        {/* OUR WORK */}
+
         {/* THREE FOCUS */}
-        <div className="w-full p-2 md:p-4 my-16 md:my-36">
+        {/* <div className="w-full p-2 md:p-4 my-16 md:my-36">
           <div className="text-3xl md:text-6xl font-museo w-full md:w-5/6 mt-24">
             We design and develop bespoke software with
             <span className="grad-bg-text"> three things in mind.</span>
@@ -119,7 +121,7 @@ export default function About() {
               <Illustration2 className="h-40 w-5/6 md:w-full md:h-80" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
