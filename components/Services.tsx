@@ -11,11 +11,11 @@ export default function Services() {
       desc: "We design websites that are fast, secure, and easy to use.",
     },
     {
-      title: "App Development",
+      title: "Branding",
       desc: "We build websites that are fast, secure, and easy to use.",
     },
     {
-      title: "Branding",
+      title: "App Development",
       desc: "We build websites that are fast, secure, and easy to use.",
     },
   ];
@@ -43,13 +43,13 @@ export default function Services() {
               <div className="w-full md:w-3/5 bg-[var(--mainGrey)] h-full rounded-3xl cursor-pointer dot-hover-box">
                 <Service title={services[0].title} desc={services[0].desc} />
               </div>
-              <div className="w-full md:w-2/5 bg-[var(--tintBlack3)] h-full rounded-3xl cursor-pointer dot-hover-box">
+              <div className="w-full md:w-2/5 bg-[var(--tintBlack3)] h-full rounded-3xl cursor-pointer">
                 <Service title={services[1].title} desc={services[1].desc} />
               </div>
             </div>
 
             <div className="flex gap-4 h-3/6 flex-col md:flex-row">
-              <div className="w-full md:w-2/5 bg-[var(--tintBlack3)] h-full rounded-3xl cursor-pointer dot-hover-box">
+              <div className="w-full md:w-2/5 bg-[var(--tintBlack3)] h-full rounded-3xl cursor-pointer">
                 <Service title={services[2].title} desc={services[2].desc} />
               </div>
               <div className="w-full md:w-3/5 bg-[var(--mainGrey)] h-full rounded-3xl cursor-pointer dot-hover-box">
