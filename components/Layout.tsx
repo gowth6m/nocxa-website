@@ -14,22 +14,22 @@ export default function Layout({ title, children }: LayoutProps) {
   const hoverLight = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handlePointerMove = (event: any) => {
-      const { clientX, clientY }: any = event;
+    // const handlePointerMove = (event: any) => {
+    //   const { clientX, clientY }: any = event;
 
-      if (hoverLight.current) {
-        hoverLight.current.animate(
-          { left: `${clientX}px`, top: `${clientY}px` },
-          { duration: 3000, fill: "forwards" }
-        );
-      }
-    };
+    //   if (hoverLight.current) {
+    //     hoverLight.current.animate(
+    //       { left: `${clientX}px`, top: `${clientY}px` },
+    //       { duration: 3000, fill: "forwards" }
+    //     );
+    //   }
+    // };
 
-    window.addEventListener("pointermove", handlePointerMove);
+    // window.addEventListener("pointermove", handlePointerMove);
 
-    return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
-    };
+    // return () => {
+    //   window.removeEventListener("pointermove", handlePointerMove);
+    // };
   }, []);
 
   return (

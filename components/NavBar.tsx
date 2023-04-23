@@ -16,11 +16,11 @@ export default function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const navLinks = [
-    { name: "Services", href: "services" },
-    { name: "Work", href: "work" },
-    { name: "Prices", href: "prices" },
-    { name: "Company", href: "company" },
-    { name: "Careers", href: "careers" },
+    { name: "Services", href: "maintenance" },
+    { name: "Work", href: "maintenance" },
+    { name: "Prices", href: "maintenance" },
+    { name: "Company", href: "maintenance" },
+    { name: "Careers", href: "maintenance" },
   ];
 
   const handleScroll = () => {
