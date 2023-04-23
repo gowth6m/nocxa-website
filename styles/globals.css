@@ -250,11 +250,11 @@ a {
 }
 
 #hoverLight {
-  height: 200px;
+  height: 180px;
   aspect-ratio: 1;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 60%;
+  top: 40%;
   translate: -50% -50%;
   border-radius: 50%;
   background: linear-gradient(to right,#a166ed,#5777ff);
