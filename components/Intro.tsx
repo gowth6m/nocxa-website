@@ -24,8 +24,7 @@ export default function Intro() {
                   London{" "}
                 </span>{" "}
                 and devoted to crafting one-of-a-kind software solutions for
-                brands that won&#39;t settle for mediocrity. Innovation
-                isn&#39;t just our jam, it&#39;s our whole darn orchestra!
+                brands that won&#39;t settle for mediocrity. Let's create something extraordinary together.
               </div>
             </div>
 
